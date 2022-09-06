@@ -1,0 +1,102 @@
+body{
+    /* color: white; */
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.box{
+    width: 27.6vw;
+    box-sizing: border-box;
+    background-color: black;
+}
+.button{
+    border: 1.5px solid white;
+    width: 9vw;
+    height: 15vh;
+    font-size: 60px;
+    text-align: center;
+}
+#box__inside{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid black;
+    color: white;
+    /* grid-gap: 0.5vw; */
+}
+#para{
+    color: white;
+    font-size: 30px;
+}
+#resetButton{
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 1vh;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: .2s ease-in-out 0s;
+}
+#resetButton:hover{
+   scale: transform(1.25);
+   color: black;
+   background-color: white;
+}
+.count{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+}
+.count>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 15px; */
+}
+@media only screen and (max-width: 1000px) {
+   .box{
+    width: 80vw;
+   }
+   .button{
+    width: 26.5vw;
+    height: 13vh;
+} 
+.count>div{
+   font-size: small;
+}
+  }
+/* #resetButton:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+} */
+#one{
+    border-color: black white white black;
+}
+#two{
+    border-color: black white white white;
+}
+#three{
+    border-color: black black white white ;
+}
+#four{
+    border-color: white white white black;
+}
+#six{
+    border-color: white black white white ;
+}
+#seven{
+    border-color: white white black black;
+}
+#eight{
+    border-color: white white black white;
+}
+#nine{
+    border-color: white black black  white ;
+}
